@@ -73,11 +73,11 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManProducto.cs">
+    <Compile Include="MantenedorProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManProducto.Designer.cs">
-      <DependentUpon>ManProducto.cs</DependentUpon>
+    <Compile Include="MantenedorProducto.Designer.cs">
+      <DependentUpon>MantenedorProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuMaderera.cs">
       <SubType>Form</SubType>
@@ -117,8 +117,8 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManProducto.resx">
-      <DependentUpon>ManProducto.cs</DependentUpon>
+    <EmbeddedResource Include="MantenedorProducto.resx">
+      <DependentUpon>MantenedorProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuMaderera.resx">
       <DependentUpon>MenuMaderera.cs</DependentUpon>

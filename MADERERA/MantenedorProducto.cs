@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace CAPAPRESENTACION
 {
-    public partial class ManProducto : Form
+    public partial class MantenedorProducto : Form
     {
-        public ManProducto()
+        public MantenedorProducto()
         {
             InitializeComponent();
+        }
+
+        private void lblTipoMadera_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
