@@ -46,127 +46,135 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(343, 342);
+            this.button1.Location = new System.Drawing.Point(386, 428);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 49);
+            this.button1.Size = new System.Drawing.Size(205, 61);
             this.button1.TabIndex = 41;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(566, 172);
+            this.textBox5.Location = new System.Drawing.Point(637, 215);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(149, 22);
+            this.textBox5.Size = new System.Drawing.Size(167, 26);
             this.textBox5.TabIndex = 40;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(511, 175);
+            this.label7.Location = new System.Drawing.Point(575, 219);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 16);
+            this.label7.Size = new System.Drawing.Size(57, 20);
             this.label7.TabIndex = 39;
             this.label7.Text = "Precio:";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(195, 169);
+            this.textBox4.Location = new System.Drawing.Point(219, 211);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(153, 22);
+            this.textBox4.Size = new System.Drawing.Size(172, 26);
             this.textBox4.TabIndex = 38;
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(128, 169);
+            this.lblNombre.Location = new System.Drawing.Point(144, 211);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(59, 16);
+            this.lblNombre.Size = new System.Drawing.Size(69, 20);
             this.lblNombre.TabIndex = 37;
             this.lblNombre.Text = "Nombre:";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(566, 120);
+            this.textBox3.Location = new System.Drawing.Point(637, 150);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(155, 22);
+            this.textBox3.Size = new System.Drawing.Size(174, 26);
             this.textBox3.TabIndex = 36;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(469, 123);
+            this.label5.Location = new System.Drawing.Point(528, 154);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 16);
+            this.label5.Size = new System.Drawing.Size(109, 20);
             this.label5.TabIndex = 35;
             this.label5.Text = "Diametro(cm):";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(195, 275);
+            this.textBox2.Location = new System.Drawing.Point(219, 344);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(155, 22);
+            this.textBox2.Size = new System.Drawing.Size(174, 26);
             this.textBox2.TabIndex = 34;
             // 
             // lblLargo
             // 
             this.lblLargo.AutoSize = true;
-            this.lblLargo.Location = new System.Drawing.Point(112, 278);
+            this.lblLargo.Location = new System.Drawing.Point(126, 348);
             this.lblLargo.Name = "lblLargo";
-            this.lblLargo.Size = new System.Drawing.Size(64, 16);
+            this.lblLargo.Size = new System.Drawing.Size(77, 20);
             this.lblLargo.TabIndex = 33;
             this.lblLargo.Text = "Largo(m):";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(195, 223);
+            this.comboBox1.Location = new System.Drawing.Point(219, 279);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(155, 24);
+            this.comboBox1.Size = new System.Drawing.Size(174, 28);
             this.comboBox1.TabIndex = 32;
             // 
             // lblTipoMadera
             // 
             this.lblTipoMadera.AutoSize = true;
-            this.lblTipoMadera.Location = new System.Drawing.Point(80, 226);
+            this.lblTipoMadera.Location = new System.Drawing.Point(90, 282);
             this.lblTipoMadera.Name = "lblTipoMadera";
-            this.lblTipoMadera.Size = new System.Drawing.Size(107, 16);
+            this.lblTipoMadera.Size = new System.Drawing.Size(123, 20);
             this.lblTipoMadera.TabIndex = 31;
             this.lblTipoMadera.Text = "Tipo de Madera:";
             this.lblTipoMadera.Click += new System.EventHandler(this.lblTipoMadera_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(193, 117);
+            this.textBox1.Location = new System.Drawing.Point(217, 146);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 22);
+            this.textBox1.Size = new System.Drawing.Size(174, 26);
             this.textBox1.TabIndex = 30;
             this.textBox1.Text = " ";
             // 
             // lblProducto
             // 
             this.lblProducto.AutoSize = true;
-            this.lblProducto.Location = new System.Drawing.Point(112, 120);
+            this.lblProducto.Location = new System.Drawing.Point(126, 150);
             this.lblProducto.Name = "lblProducto";
-            this.lblProducto.Size = new System.Drawing.Size(75, 16);
+            this.lblProducto.Size = new System.Drawing.Size(91, 20);
             this.lblProducto.TabIndex = 29;
             this.lblProducto.Text = "IdProducto:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(360, 60);
+            this.label1.Location = new System.Drawing.Point(405, 75);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 16);
+            this.label1.Size = new System.Drawing.Size(159, 20);
             this.label1.TabIndex = 28;
             this.label1.Text = "Registro de Producto";
             // 
             // MantenedorProducto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.ClientSize = new System.Drawing.Size(900, 562);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label7);
@@ -181,6 +189,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblProducto);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MantenedorProducto";
             this.Text = "MantenedorProducto";
             this.ResumeLayout(false);
