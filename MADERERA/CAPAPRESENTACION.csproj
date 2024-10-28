@@ -71,6 +71,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="MantenedorHerramientas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorHerramientas.Designer.cs">
+      <DependentUpon>MantenedorHerramientas.cs</DependentUpon>
+    </Compile>
     <Compile Include="MatenedorCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorHerramientas.resx">
+      <DependentUpon>MantenedorHerramientas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MatenedorCliente.resx">
       <DependentUpon>MatenedorCliente.cs</DependentUpon>
