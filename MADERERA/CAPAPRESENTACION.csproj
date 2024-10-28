@@ -66,6 +66,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoredeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoredeCompra.Designer.cs">
+      <DependentUpon>CoredeCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="CoreVenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     <Compile Include="VentaBuscarVendedor.Designer.cs">
       <DependentUpon>VentaBuscarVendedor.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CoredeCompra.resx">
+      <DependentUpon>CoredeCompra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CoreVenta.resx">
       <DependentUpon>CoreVenta.cs</DependentUpon>
     </EmbeddedResource>
