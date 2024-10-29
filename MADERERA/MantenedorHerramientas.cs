@@ -31,5 +31,11 @@ namespace CAPAPRESENTACION
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            BuscarHerramienta buscarHerramienta = new BuscarHerramienta();
+            buscarHerramienta.ShowDialog();
+        }
     }
 }
