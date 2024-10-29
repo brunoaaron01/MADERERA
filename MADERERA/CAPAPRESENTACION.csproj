@@ -66,6 +66,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MantenedorVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorVendedor.Designer.cs">
+      <DependentUpon>MantenedorVendedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="CoredeCompra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <EmbeddedResource Include="MantenedorVendedor.resx">
+      <DependentUpon>MantenedorVendedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorHerramientas.resx">
       <DependentUpon>MantenedorHerramientas.cs</DependentUpon>
