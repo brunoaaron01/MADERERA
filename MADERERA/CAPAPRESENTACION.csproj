@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mantenedor Vendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenedor Vendedor.Designer.cs">
+      <DependentUpon>Mantenedor Vendedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenedor Vendedor.resx">
+      <DependentUpon>Mantenedor Vendedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuMaderera.resx">
       <DependentUpon>MenuMaderera.cs</DependentUpon>
