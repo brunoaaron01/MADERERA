@@ -34,5 +34,10 @@ namespace CAPAPRESENTACION
             VentaBuscarProducto buscarpro = new VentaBuscarProducto();
             buscarpro.ShowDialog();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
