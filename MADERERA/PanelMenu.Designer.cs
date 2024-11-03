@@ -41,6 +41,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.pMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Panonimo.SuspendLayout();
@@ -49,6 +51,8 @@
             // pMenu
             // 
             this.pMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.pMenu.Controls.Add(this.button10);
+            this.pMenu.Controls.Add(this.button9);
             this.pMenu.Controls.Add(this.button5);
             this.pMenu.Controls.Add(this.button4);
             this.pMenu.Controls.Add(this.button3);
@@ -75,7 +79,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(226, 101);
             this.button5.TabIndex = 5;
-            this.button5.Text = "button5";
+            this.button5.Text = "Compra";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             this.button5.MouseEnter += new System.EventHandler(this.btnMouseEner);
@@ -93,7 +97,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(226, 95);
             this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
+            this.button4.Text = "Venta";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.MouseEnter += new System.EventHandler(this.btnMouseEner);
             this.button4.MouseLeave += new System.EventHandler(this.btnMouseLeave);
@@ -110,7 +114,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(226, 95);
             this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
+            this.button3.Text = "Mantenimiento";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             this.button3.MouseEnter += new System.EventHandler(this.btnMouseEner);
@@ -128,7 +132,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(226, 98);
             this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
+            this.button2.Text = "Cliente";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.MouseEnter += new System.EventHandler(this.btnMouseEner);
             this.button2.MouseLeave += new System.EventHandler(this.btnMouseLeave);
@@ -223,6 +227,36 @@
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
             // 
+            // button9
+            // 
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button9.Location = new System.Drawing.Point(1135, 56);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(226, 95);
+            this.button9.TabIndex = 6;
+            this.button9.Text = "Empleado";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button10.Location = new System.Drawing.Point(1367, 62);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(226, 95);
+            this.button10.TabIndex = 7;
+            this.button10.Text = "Producto";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
             // PanelMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -255,5 +289,7 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button9;
     }
 }
