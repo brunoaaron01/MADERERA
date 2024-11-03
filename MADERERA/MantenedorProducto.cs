@@ -16,5 +16,11 @@ namespace CAPAPRESENTACION
         {
             InitializeComponent();
         }
+
+        private void btnBuscarProducto_Click(object sender, EventArgs e)
+        {
+            VentaBuscarProducto buscarProducto = new VentaBuscarProducto();
+            buscarProducto.ShowDialog();
+        }
     }
 }

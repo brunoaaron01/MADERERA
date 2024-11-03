@@ -40,20 +40,24 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnBuscarProducto = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(372, 290);
+            this.button1.BackColor = System.Drawing.Color.IndianRed;
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(480, 160);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(217, 60);
             this.button1.TabIndex = 23;
             this.button1.Text = "Registrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(577, 117);
+            this.textBox5.Location = new System.Drawing.Point(575, 111);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 22);
             this.textBox5.TabIndex = 22;
@@ -61,7 +65,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(512, 117);
+            this.label6.Location = new System.Drawing.Point(510, 111);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 16);
             this.label6.TabIndex = 21;
@@ -140,11 +144,35 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Registro Producto";
             // 
+            // btnBuscarProducto
+            // 
+            this.btnBuscarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnBuscarProducto.Location = new System.Drawing.Point(480, 246);
+            this.btnBuscarProducto.Name = "btnBuscarProducto";
+            this.btnBuscarProducto.Size = new System.Drawing.Size(217, 66);
+            this.btnBuscarProducto.TabIndex = 24;
+            this.btnBuscarProducto.Text = "Buscar";
+            this.btnBuscarProducto.UseVisualStyleBackColor = false;
+            this.btnBuscarProducto.Click += new System.EventHandler(this.btnBuscarProducto_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button2.Location = new System.Drawing.Point(480, 335);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(217, 64);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "Editar";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // MantenedorProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnBuscarProducto);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label6);
@@ -178,5 +206,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnBuscarProducto;
+        private System.Windows.Forms.Button button2;
     }
 }

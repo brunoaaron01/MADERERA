@@ -66,6 +66,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuscarHerramienta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarHerramienta.Designer.cs">
+      <DependentUpon>BuscarHerramienta.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorVendedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,18 +134,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Prueba23.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Prueba23.Designer.cs">
-      <DependentUpon>Prueba23.cs</DependentUpon>
-    </Compile>
-    <Compile Include="RAMACECHAR.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RAMACECHAR.Designer.cs">
-      <DependentUpon>RAMACECHAR.cs</DependentUpon>
-    </Compile>
     <Compile Include="VentaBuscarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +152,9 @@
     <Compile Include="VentaBuscarVendedor.Designer.cs">
       <DependentUpon>VentaBuscarVendedor.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BuscarHerramienta.resx">
+      <DependentUpon>BuscarHerramienta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CoredeCompra.resx">
       <DependentUpon>CoredeCompra.cs</DependentUpon>
     </EmbeddedResource>
@@ -198,12 +195,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Prueba23.resx">
-      <DependentUpon>Prueba23.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RAMACECHAR.resx">
-      <DependentUpon>RAMACECHAR.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="VentaBuscarCliente.resx">
       <DependentUpon>VentaBuscarCliente.cs</DependentUpon>
     </EmbeddedResource>

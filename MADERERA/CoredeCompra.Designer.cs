@@ -395,11 +395,7 @@
             // 
             // textBox13
             // 
-            this.textBox13.Enabled = false;
-            this.textBox13.Location = new System.Drawing.Point(185, 220);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(182, 26);
-            this.textBox13.TabIndex = 8;
+            
             // 
             // groupBox3
             // 
