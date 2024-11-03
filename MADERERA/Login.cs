@@ -20,7 +20,9 @@ namespace MADERERA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            PanelMenu pm=new PanelMenu();
+            this.Hide();    
+            pm.Show(); 
         }
     }
 }

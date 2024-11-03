@@ -120,6 +120,12 @@
     <Compile Include="MatenedorCliente.Designer.cs">
       <DependentUpon>MatenedorCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="PanelMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelMenu.Designer.cs">
+      <DependentUpon>PanelMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Prueba23.cs">
@@ -178,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MatenedorCliente.resx">
       <DependentUpon>MatenedorCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelMenu.resx">
+      <DependentUpon>PanelMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
