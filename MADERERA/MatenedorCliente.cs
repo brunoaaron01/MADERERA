@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CAPAPRESENTACION
 {
-    public partial class MatenedorCliente : Form
+    public partial class MatenedorCliente2 : Form
     {
-        public MatenedorCliente()
+        public MatenedorCliente2()
         {
             InitializeComponent();
         }
