@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CAPADEENTIDAD;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +13,14 @@ namespace CAPAPRESENTACION
 {
     public partial class PresentacionMenu : Form
     {
-        public PresentacionMenu()
+        private static EntUsuarios usuarioActual;
+        public PresentacionMenu(EntUsuarios objusuario = null)
         {
+
+            if (objusuario == null)
+                usuarioActual = new EntUsuarios() { NombreCompleto = "ADMIN PREDEFINIDO", IdUsuario = 1 };
+            else
+                usuarioActual = objusuario;
             InitializeComponent();
         }
 

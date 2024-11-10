@@ -261,5 +261,15 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CAPADEENTIDAD\CAPADEENTIDAD.csproj">
+      <Project>{693cee21-6b02-4516-9320-6060e4c1c4b0}</Project>
+      <Name>CAPADEENTIDAD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CAPADELOGICA\CAPADELOGICA.csproj">
+      <Project>{50fa72e9-c0e0-40c1-b300-df5e1fec58d0}</Project>
+      <Name>CAPADELOGICA</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
