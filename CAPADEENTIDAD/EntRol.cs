@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace CAPADEENTIDAD
 {
-    public class Class1
+    public class EntRol
     {
+        public int Id { get; set; }
+        public string Descripcion { get; set; }
+
+        public string FechaRegistro { get; set; }
+
     }
 }
