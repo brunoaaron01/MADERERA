@@ -76,6 +76,24 @@
     <Compile Include="BuscarHerramienta.Designer.cs">
       <DependentUpon>BuscarHerramienta.cs</DependentUpon>
     </Compile>
+    <Compile Include="MantenedorDetalleCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorDetalleCompra.Designer.cs">
+      <DependentUpon>MantenedorDetalleCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorDetalleVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorDetalleVenta.Designer.cs">
+      <DependentUpon>MantenedorDetalleVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentacionMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentacionMenu.Designer.cs">
+      <DependentUpon>PresentacionMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorVendedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +182,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CoreVenta.resx">
       <DependentUpon>CoreVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorDetalleCompra.resx">
+      <DependentUpon>MantenedorDetalleCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorDetalleVenta.resx">
+      <DependentUpon>MantenedorDetalleVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentacionMenu.resx">
+      <DependentUpon>PresentacionMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
