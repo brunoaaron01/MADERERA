@@ -22,19 +22,19 @@ namespace MADERERA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            EntUsuarios ousuario = new LogUsuarios().ListarUsuarios().Where(u => u.Dni == textBox2.Text && u.Clave == txtContraseña.Text).FirstOrDefault();
+            //EntUsuarios ousuario = new LogUsuarios().ListarUsuarios().Where(u => u.Dni == textBox2.Text && u.Clave == txtContraseña.Text).FirstOrDefault();
+            CE_Usuario Req_Usuario = new CE_Usuario();
+            Req_Usuario.Usuario = TxtUsuario.Text.Trim();
+            Req_Usuario.Pass = txtContraseña.Text.Trim();
 
+            List<CE_Usuario> List_Usuario = new CL_Usuario().ValidarLoginUsuario(Req_Usuario);
 
-            if (ousuario != null)
+            if (List_Usuario != null)
             {
-
-                PresentacionMenu pm = new PresentacionMenu(ousuario);
+                PresentacionMenu pm = new PresentacionMenu(List_Usuario);
                 this.Hide();
                 pm.Show();
-
                 pm.FormClosing += frm_closing;
-
             }
             else
             {
@@ -44,7 +44,7 @@ namespace MADERERA
         private void frm_closing(object sender, FormClosingEventArgs e)
         {
 
-            textBox2.Text = "";
+            TxtUsuario.Text = "";
             txtContraseña.Text = "";
             this.Show();
         }

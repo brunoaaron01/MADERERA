@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CE_Rol.cs" />
+    <Compile Include="CE_TipoProducto.cs" />
+    <Compile Include="CE_Usuario.cs" />
     <Compile Include="EntRol.cs" />
     <Compile Include="EntUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

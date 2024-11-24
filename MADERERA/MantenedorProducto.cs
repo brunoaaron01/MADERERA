@@ -22,5 +22,11 @@ namespace CAPAPRESENTACION
             VentaBuscarProducto buscarProducto = new VentaBuscarProducto();
             buscarProducto.ShowDialog();
         }
+
+        private void btnMantTipoProd_Click(object sender, EventArgs e)
+        {
+            MantenedorTipoProducto MantTipoProducto = new MantenedorTipoProducto();
+            MantTipoProducto.ShowDialog();
+        }
     }
 }

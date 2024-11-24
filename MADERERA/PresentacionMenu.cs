@@ -13,17 +13,25 @@ namespace CAPAPRESENTACION
 {
     public partial class PresentacionMenu : Form
     {
-        private static EntUsuarios usuarioActual;
-        public PresentacionMenu(EntUsuarios objusuario = null)
+        private static List<CE_Usuario> usuarioActual;
+        public PresentacionMenu(List<CE_Usuario> objusuario = null)
         {
 
             if (objusuario == null)
-                usuarioActual = new EntUsuarios() { NombreCompleto = "ADMIN PREDEFINIDO", IdUsuario = 1 };
+                usuarioActual = new List<CE_Usuario>
+                {
+                    new CE_Usuario { Usuario = "ADMIN PREDEFINIDO" }
+                };
             else
                 usuarioActual = objusuario;
+            MostrarMensajeBienvenida();
             InitializeComponent();
         }
-
+        private void MostrarMensajeBienvenida()
+        {
+            string nombreUsuario = usuarioActual[0].CE_Rol.NombreRol;
+            MessageBox.Show($"¡Bienvenido, {nombreUsuario}!", "Bienvenida", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
         private void registrarClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
