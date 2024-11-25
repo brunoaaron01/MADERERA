@@ -35,75 +35,105 @@
             this.btnRegistrarTipProd = new System.Windows.Forms.Button();
             this.btnModificarTipProd = new System.Windows.Forms.Button();
             this.btnEliminarTipProd = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(48, 166);
+            this.dataGridView1.Location = new System.Drawing.Point(72, 255);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(676, 183);
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.Size = new System.Drawing.Size(1014, 282);
             this.dataGridView1.TabIndex = 0;
             // 
             // lblDescTipoProd
             // 
             this.lblDescTipoProd.AutoSize = true;
-            this.lblDescTipoProd.Location = new System.Drawing.Point(42, 35);
+            this.lblDescTipoProd.Location = new System.Drawing.Point(63, 54);
+            this.lblDescTipoProd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescTipoProd.Name = "lblDescTipoProd";
-            this.lblDescTipoProd.Size = new System.Drawing.Size(128, 13);
+            this.lblDescTipoProd.Size = new System.Drawing.Size(189, 20);
             this.lblDescTipoProd.TabIndex = 1;
             this.lblDescTipoProd.Text = "Descripción tipo producto";
             // 
             // txtDescTipoProd
             // 
-            this.txtDescTipoProd.Location = new System.Drawing.Point(186, 27);
+            this.txtDescTipoProd.Location = new System.Drawing.Point(272, 48);
+            this.txtDescTipoProd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDescTipoProd.Name = "txtDescTipoProd";
-            this.txtDescTipoProd.Size = new System.Drawing.Size(219, 20);
+            this.txtDescTipoProd.Size = new System.Drawing.Size(326, 26);
             this.txtDescTipoProd.TabIndex = 2;
             this.txtDescTipoProd.TextChanged += new System.EventHandler(this.txtDescTipoProd_TextChanged);
             // 
             // lblInfoProd
             // 
             this.lblInfoProd.AutoSize = true;
-            this.lblInfoProd.Location = new System.Drawing.Point(45, 127);
+            this.lblInfoProd.Location = new System.Drawing.Point(68, 195);
+            this.lblInfoProd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblInfoProd.Name = "lblInfoProd";
-            this.lblInfoProd.Size = new System.Drawing.Size(209, 13);
+            this.lblInfoProd.Size = new System.Drawing.Size(312, 20);
             this.lblInfoProd.TabIndex = 3;
             this.lblInfoProd.Text = "Seleccionar elemento de la lista para editar";
             // 
             // btnRegistrarTipProd
             // 
-            this.btnRegistrarTipProd.Location = new System.Drawing.Point(602, 23);
+            this.btnRegistrarTipProd.Location = new System.Drawing.Point(903, 35);
+            this.btnRegistrarTipProd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRegistrarTipProd.Name = "btnRegistrarTipProd";
-            this.btnRegistrarTipProd.Size = new System.Drawing.Size(122, 25);
+            this.btnRegistrarTipProd.Size = new System.Drawing.Size(183, 38);
             this.btnRegistrarTipProd.TabIndex = 4;
             this.btnRegistrarTipProd.Text = "Registrar";
             this.btnRegistrarTipProd.UseVisualStyleBackColor = true;
             // 
             // btnModificarTipProd
             // 
-            this.btnModificarTipProd.Location = new System.Drawing.Point(602, 68);
+            this.btnModificarTipProd.Location = new System.Drawing.Point(903, 105);
+            this.btnModificarTipProd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnModificarTipProd.Name = "btnModificarTipProd";
-            this.btnModificarTipProd.Size = new System.Drawing.Size(122, 25);
+            this.btnModificarTipProd.Size = new System.Drawing.Size(183, 38);
             this.btnModificarTipProd.TabIndex = 5;
             this.btnModificarTipProd.Text = "Modificar";
             this.btnModificarTipProd.UseVisualStyleBackColor = true;
             // 
             // btnEliminarTipProd
             // 
-            this.btnEliminarTipProd.Location = new System.Drawing.Point(602, 115);
+            this.btnEliminarTipProd.Location = new System.Drawing.Point(903, 177);
+            this.btnEliminarTipProd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEliminarTipProd.Name = "btnEliminarTipProd";
-            this.btnEliminarTipProd.Size = new System.Drawing.Size(122, 25);
+            this.btnEliminarTipProd.Size = new System.Drawing.Size(183, 38);
             this.btnEliminarTipProd.TabIndex = 6;
             this.btnEliminarTipProd.Text = "Eliminar";
             this.btnEliminarTipProd.UseVisualStyleBackColor = true;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Enabled = false;
+            this.dateTimePicker1.Location = new System.Drawing.Point(272, 105);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(326, 26);
+            this.dateTimePicker1.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(76, 110);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 20);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Fecha de Ingreso";
+            // 
             // MantenedorTipoProducto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(757, 401);
+            this.ClientSize = new System.Drawing.Size(1136, 617);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btnEliminarTipProd);
             this.Controls.Add(this.btnModificarTipProd);
             this.Controls.Add(this.btnRegistrarTipProd);
@@ -111,6 +141,7 @@
             this.Controls.Add(this.txtDescTipoProd);
             this.Controls.Add(this.lblDescTipoProd);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MantenedorTipoProducto";
             this.Text = "MantenedorTipoProducto";
             this.Load += new System.EventHandler(this.MantenedorTipoProducto_Load);
@@ -129,5 +160,7 @@
         private System.Windows.Forms.Button btnRegistrarTipProd;
         private System.Windows.Forms.Button btnModificarTipProd;
         private System.Windows.Forms.Button btnEliminarTipProd;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label1;
     }
 }

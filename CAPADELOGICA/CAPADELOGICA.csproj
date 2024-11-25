@@ -41,8 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CL_CLIENTE.cs" />
+    <Compile Include="CL_COMPRA.cs" />
+    <Compile Include="CL_HERRAMIENTA.cs" />
+    <Compile Include="CL_MANTENIMIENTO.cs" />
+    <Compile Include="CL_PRODUCTO.cs" />
     <Compile Include="CL_TipoProducto.cs" />
     <Compile Include="CL_Usuario.cs" />
+    <Compile Include="CL_VENDEDOR.cs" />
+    <Compile Include="CL_VENTA.cs" />
     <Compile Include="LogUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
