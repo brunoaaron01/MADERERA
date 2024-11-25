@@ -50,5 +50,47 @@ namespace CAPADEDATOS
             catch (Exception ex) { throw ex; }
             return ListTipoProducto;
         }
+        //Datatable para combo
+        public DataTable Get_dt_TipoProducto(String Descripcion)
+        {
+            SqlCommand cmd = null;
+            DataTable dtTipoProducto = new DataTable();
+            try
+            {
+                using (SqlConnection cn = CD_Conexion.Instancia.Conectar()) //singleton
+                {
+                    cmd = new SqlCommand("sp_Get_List_TipoProducto_Por_Descripcion", cn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@Descripcion", Descripcion);
+                    cn.Open();
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        dtTipoProducto.Load(dr);
+                    }
+                }
+            }
+            catch (Exception ex) { throw ex; }
+            return dtTipoProducto;
+        }
+        //Insertar tipo producto
+        public Int32 Ins_TipoProducto(CE_TipoProducto Req_TipoProducto)
+        {
+            Int32 Rpta = 0;
+            SqlCommand cmd = null;
+            try
+            {
+                using (SqlConnection cn = CD_Conexion.Instancia.Conectar()) //singleton
+                {
+                    cmd = new SqlCommand("sp_InsertTipoProducto", cn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@DESCRIPCION", Req_TipoProducto.Descripcion);
+                    cmd.Parameters.AddWithValue("@FECHATIPOPRO", Req_TipoProducto.FecRegTipoProd);
+                    cn.Open();
+                    Rpta = cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex) { throw ex; }
+            return Rpta;
+        }
     }
 }

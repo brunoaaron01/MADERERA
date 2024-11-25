@@ -41,6 +41,8 @@ namespace CAPADEDATOS
                 {
                     CE_Usuario Get_Usuario = new CE_Usuario();
                     Get_Usuario.Usuario = dr["USUARIO"].ToString();
+                    Get_Usuario.Nombre = dr["Nombre"].ToString();
+                    Get_Usuario.NroDocIde = dr["NroDocIde"].ToString();
                     Get_Usuario.CE_Rol.NombreRol = dr["NOMBREROL"].ToString();
                     ListUsuario.Add(Get_Usuario);
                 }

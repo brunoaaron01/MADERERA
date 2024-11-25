@@ -84,5 +84,10 @@ namespace CAPAPRESENTACION
             MantenedorDetalleCompra cc=new MantenedorDetalleCompra();
             cc.ShowDialog();   
         }
+
+        private void PresentacionMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

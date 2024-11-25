@@ -32,6 +32,7 @@ namespace MADERERA
             if (List_Usuario != null)
             {
                 PresentacionMenu pm = new PresentacionMenu(List_Usuario);
+                CoreVenta coreVenta = new CoreVenta(List_Usuario);
                 this.Hide();
                 pm.Show();
                 pm.FormClosing += frm_closing;

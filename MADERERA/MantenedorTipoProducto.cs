@@ -21,7 +21,12 @@ namespace CAPAPRESENTACION
 
         private void MantenedorTipoProducto_Load(object sender, EventArgs e)
         {
-            Autocompletar_txtDescTipoProd();
+            //Autocompletar_txtDescTipoProd();
+            List_TipoProducto();
+        }
+        private void List_TipoProducto() {
+            List<CE_TipoProducto> ListTipoProd = new CL_TipoProducto().Get_List_TipoProducto(txtDescTipoProd.Text);
+            dataGridView1.DataSource = ListTipoProd;
         }
         private void Autocompletar_txtDescTipoProd() {
             if (txtDescTipoProd.Text.Length >= 2)
@@ -53,9 +58,26 @@ namespace CAPAPRESENTACION
                 }
             }
         }
-        private void txtDescTipoProd_TextChanged(object sender, EventArgs e)
+
+        private void btnRegistrarTipProd_Click(object sender, EventArgs e)
         {
-            Autocompletar_txtDescTipoProd();
+            CE_TipoProducto Req_TipoProducto = new CE_TipoProducto();
+            Req_TipoProducto.Descripcion = txtDescTipoProd.Text;
+            Req_TipoProducto.FecRegTipoProd = DateTime.Now;
+            Int32 Rpta = CL_TipoProducto.Instancia.Ins_TipoProducto(Req_TipoProducto);
+            if (Rpta == 1)
+            {
+                MessageBox.Show($"Tipo de producto registrado correctamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtDescTipoProd.Text = "";
+                List_TipoProducto();
+            }
+            else {
+                MessageBox.Show($"Error al registrar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+        //private void txtDescTipoProd_TextChanged(object sender, EventArgs e)
+        //{
+        //    Autocompletar_txtDescTipoProd();
+        //}
     }
 }
