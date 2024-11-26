@@ -119,6 +119,7 @@ namespace CAPAPRESENTACION
             {
                 MessageBox.Show("Proveedor actualizado correctamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Nuevo();
+                AutocompletarProveedor();
             }
             else
             {
@@ -149,6 +150,7 @@ namespace CAPAPRESENTACION
             {
                 MessageBox.Show("Cliente eliminado correctamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Nuevo();
+                AutocompletarProveedor();
             }
             else
             {

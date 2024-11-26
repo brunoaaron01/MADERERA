@@ -70,7 +70,7 @@ namespace CAPAPRESENTACION
 
         private void registrarCompraToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CoredeCompra cc=new CoredeCompra(); 
+            CoredeCompra cc=new CoredeCompra(usuarioActual); 
             cc.ShowDialog();
         }
 

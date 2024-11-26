@@ -76,6 +76,12 @@
     <Compile Include="BuscarHerramienta.Designer.cs">
       <DependentUpon>BuscarHerramienta.cs</DependentUpon>
     </Compile>
+    <Compile Include="CompraBuscarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompraBuscarProveedor.Designer.cs">
+      <DependentUpon>CompraBuscarProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorDetalleCompra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,9 @@
     </Compile>
     <EmbeddedResource Include="BuscarHerramienta.resx">
       <DependentUpon>BuscarHerramienta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompraBuscarProveedor.resx">
+      <DependentUpon>CompraBuscarProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CoredeCompra.resx">
       <DependentUpon>CoredeCompra.cs</DependentUpon>

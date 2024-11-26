@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CAPADEENTIDAD;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,30 @@ namespace CAPAPRESENTACION
 {
     public partial class CoredeCompra : Form
     {
-        public CoredeCompra()
+        private static List<CE_Usuario> usuarioActual;
+        public CoredeCompra(List<CE_Usuario> objusuario = null)
         {
+            if (objusuario == null)
+                usuarioActual = new List<CE_Usuario>
+                {
+                    new CE_Usuario { Usuario = "ADMIN PREDEFINIDO" }
+                };
+            else
+                usuarioActual = objusuario;
             InitializeComponent();
+            AsignarDatosUsuario();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void CoredeCompra_Load(object sender, EventArgs e)
         {
 
+        }
+        private void AsignarDatosUsuario()
+        {
+            txtIdUsuario.Text = usuarioActual[0].IdUsuario.ToString();
+            txtNroDocUsuario.Text = usuarioActual[0].NroDocIde;
+            txtNombreUsuario.Text = usuarioActual[0].Nombre;
+            txtCargoUsuario.Text = usuarioActual[0].CE_Rol.NombreRol;
         }
     }
 }
