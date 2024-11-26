@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DateTimePicker dateTimePicker1;
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAgregarCLiente = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtIdCliente = new System.Windows.Forms.TextBox();
@@ -42,7 +42,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtNroDocIdeCli = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnEditarCliente = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -51,26 +53,26 @@
             // 
             dateTimePicker1.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new System.Drawing.Point(140, 232);
+            dateTimePicker1.Location = new System.Drawing.Point(136, 289);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new System.Drawing.Size(187, 25);
             dateTimePicker1.TabIndex = 1;
             // 
-            // button1
+            // btnAgregarCLiente
             // 
-            this.button1.BackColor = System.Drawing.Color.LimeGreen;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.Ignore;
-            this.button1.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(438, 370);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 55);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Agregar";
-            this.button1.UseMnemonic = false;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAgregarCLiente.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnAgregarCLiente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnAgregarCLiente.DialogResult = System.Windows.Forms.DialogResult.Ignore;
+            this.btnAgregarCLiente.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarCLiente.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnAgregarCLiente.Location = new System.Drawing.Point(133, 381);
+            this.btnAgregarCLiente.Name = "btnAgregarCLiente";
+            this.btnAgregarCLiente.Size = new System.Drawing.Size(144, 55);
+            this.btnAgregarCLiente.TabIndex = 0;
+            this.btnAgregarCLiente.Text = "Registrar";
+            this.btnAgregarCLiente.UseMnemonic = false;
+            this.btnAgregarCLiente.UseVisualStyleBackColor = false;
+            this.btnAgregarCLiente.Click += new System.EventHandler(this.btnAgregarCLiente_Click);
             // 
             // label1
             // 
@@ -86,7 +88,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(35, 107);
+            this.label2.Location = new System.Drawing.Point(31, 149);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 17);
             this.label2.TabIndex = 3;
@@ -104,7 +106,7 @@
             // txtNomCliente
             // 
             this.txtNomCliente.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomCliente.Location = new System.Drawing.Point(139, 107);
+            this.txtNomCliente.Location = new System.Drawing.Point(135, 149);
             this.txtNomCliente.Name = "txtNomCliente";
             this.txtNomCliente.Size = new System.Drawing.Size(187, 25);
             this.txtNomCliente.TabIndex = 6;
@@ -125,7 +127,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(28, 29);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(676, 324);
+            this.groupBox1.Size = new System.Drawing.Size(676, 335);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cliente";
@@ -133,7 +135,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(47, 191);
+            this.label10.Location = new System.Drawing.Point(44, 107);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(26, 13);
             this.label10.TabIndex = 22;
@@ -142,7 +144,7 @@
             // txtCorreoCli
             // 
             this.txtCorreoCli.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreoCli.Location = new System.Drawing.Point(139, 145);
+            this.txtCorreoCli.Location = new System.Drawing.Point(135, 187);
             this.txtCorreoCli.Name = "txtCorreoCli";
             this.txtCorreoCli.Size = new System.Drawing.Size(188, 25);
             this.txtCorreoCli.TabIndex = 19;
@@ -150,7 +152,7 @@
             // txtFonoCli
             // 
             this.txtFonoCli.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFonoCli.Location = new System.Drawing.Point(139, 280);
+            this.txtFonoCli.Location = new System.Drawing.Point(139, 236);
             this.txtFonoCli.Name = "txtFonoCli";
             this.txtFonoCli.Size = new System.Drawing.Size(188, 25);
             this.txtFonoCli.TabIndex = 18;
@@ -159,7 +161,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(46, 153);
+            this.label8.Location = new System.Drawing.Point(42, 195);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 17);
             this.label8.TabIndex = 13;
@@ -169,7 +171,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(11, 283);
+            this.label7.Location = new System.Drawing.Point(-3, 244);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(103, 17);
             this.label7.TabIndex = 12;
@@ -178,42 +180,73 @@
             // txtNroDocIdeCli
             // 
             this.txtNroDocIdeCli.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNroDocIdeCli.Location = new System.Drawing.Point(139, 190);
+            this.txtNroDocIdeCli.Location = new System.Drawing.Point(136, 106);
             this.txtNroDocIdeCli.Name = "txtNroDocIdeCli";
             this.txtNroDocIdeCli.Size = new System.Drawing.Size(187, 25);
             this.txtNroDocIdeCli.TabIndex = 11;
+            this.txtNroDocIdeCli.Leave += new System.EventHandler(this.txtNroDocIdeCli_Leave);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(21, 235);
+            this.label4.Location = new System.Drawing.Point(17, 292);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 17);
             this.label4.TabIndex = 8;
             this.label4.Text = "Fecha Registro";
             // 
-            // button2
+            // btnEditarCliente
             // 
-            this.button2.BackColor = System.Drawing.Color.Gold;
-            this.button2.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(244, 370);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 55);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnEditarCliente.BackColor = System.Drawing.Color.Gold;
+            this.btnEditarCliente.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarCliente.Location = new System.Drawing.Point(283, 381);
+            this.btnEditarCliente.Name = "btnEditarCliente";
+            this.btnEditarCliente.Size = new System.Drawing.Size(146, 55);
+            this.btnEditarCliente.TabIndex = 21;
+            this.btnEditarCliente.Text = "Editar";
+            this.btnEditarCliente.UseVisualStyleBackColor = false;
+            this.btnEditarCliente.Visible = false;
+            this.btnEditarCliente.Click += new System.EventHandler(this.btnEditarCliente_Click);
             // 
-            // MatenedorCliente2
+            // btnNuevo
+            // 
+            this.btnNuevo.BackColor = System.Drawing.Color.Gold;
+            this.btnNuevo.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Location = new System.Drawing.Point(435, 381);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(146, 55);
+            this.btnNuevo.TabIndex = 22;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Visible = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.Gold;
+            this.btnEliminar.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(587, 381);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(146, 55);
+            this.btnEliminar.TabIndex = 23;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Visible = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // MatenedorCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(809, 498);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnNuevo);
+            this.Controls.Add(this.btnEditarCliente);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
-            this.Name = "MatenedorCliente2";
+            this.Controls.Add(this.btnAgregarCLiente);
+            this.Name = "MatenedorCliente";
             this.Text = "MatenedorCliente";
             this.Load += new System.EventHandler(this.MatenedorCliente_Load);
             this.groupBox1.ResumeLayout(false);
@@ -224,7 +257,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAgregarCLiente;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtIdCliente;
@@ -236,7 +269,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtNroDocIdeCli;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnEditarCliente;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }

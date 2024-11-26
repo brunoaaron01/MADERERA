@@ -47,6 +47,7 @@
     <Compile Include="CL_HERRAMIENTA.cs" />
     <Compile Include="CL_MANTENIMIENTO.cs" />
     <Compile Include="CL_PRODUCTO.cs" />
+    <Compile Include="CL_Proveedor.cs" />
     <Compile Include="CL_TipoProducto.cs" />
     <Compile Include="CL_Usuario.cs" />
     <Compile Include="CL_VENDEDOR.cs" />

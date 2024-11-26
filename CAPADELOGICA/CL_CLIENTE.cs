@@ -24,6 +24,14 @@ namespace CAPADELOGICA
         {
             return CD_Cliente.Instancia.Ins_Cliente(Req_Cliente);
         }
+        public Int32 Upd_Cliente(CE_Cliente Req_Cliente)
+        {
+            return CD_Cliente.Instancia.Upd_Cliente(Req_Cliente);
+        }
+        public Int32 Del_Cliente(CE_Cliente Req_Cliente)
+        {
+            return CD_Cliente.Instancia.Del_Cliente(Req_Cliente);
+        }
         public List<CE_Cliente> List_Cliente_Por_NroDocIde(String NroDocCli)
         {
             return CD_Cliente.Instancia.List_Cliente_Por_NroDocIde(NroDocCli);

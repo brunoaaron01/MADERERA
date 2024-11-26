@@ -18,7 +18,7 @@ namespace MADERERA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MantenedorProducto());
+            Application.Run(new MantenedorProveedor());
             //Application.Run(new Login());
         }
     }

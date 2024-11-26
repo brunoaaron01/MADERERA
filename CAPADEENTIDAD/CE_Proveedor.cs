@@ -9,6 +9,7 @@ namespace CAPADEENTIDAD
     public class CE_Proveedor
     {
         public Int32 IdProveedor {  get; set; }
+        public String RUC {  get; set; }
         public String RazonSocial {  get; set; }
         public String Correo {  get; set; }
         public String Telefono { get; set; }
