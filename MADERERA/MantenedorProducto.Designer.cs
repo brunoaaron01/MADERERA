@@ -39,8 +39,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnBuscarProducto = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnEditarProducto = new System.Windows.Forms.Button();
+            this.txtIdProducto = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnMantTipoProd = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -64,7 +64,7 @@
             // 
             // txtPrecioProd
             // 
-            this.txtPrecioProd.Location = new System.Drawing.Point(100, 237);
+            this.txtPrecioProd.Location = new System.Drawing.Point(100, 263);
             this.txtPrecioProd.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrecioProd.Name = "txtPrecioProd";
             this.txtPrecioProd.Size = new System.Drawing.Size(76, 20);
@@ -73,7 +73,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(51, 237);
+            this.label6.Location = new System.Drawing.Point(44, 270);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 13);
@@ -82,7 +82,7 @@
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(98, 213);
+            this.txtStock.Location = new System.Drawing.Point(100, 223);
             this.txtStock.Margin = new System.Windows.Forms.Padding(2);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(102, 20);
@@ -91,7 +91,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(33, 213);
+            this.label5.Location = new System.Drawing.Point(49, 223);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 13);
@@ -105,6 +105,7 @@
             this.txtNomProducto.Name = "txtNomProducto";
             this.txtNomProducto.Size = new System.Drawing.Size(102, 20);
             this.txtNomProducto.TabIndex = 18;
+            this.txtNomProducto.Leave += new System.EventHandler(this.txtNomProducto_Leave);
             // 
             // label4
             // 
@@ -118,7 +119,7 @@
             // 
             // txtDescProd
             // 
-            this.txtDescProd.Location = new System.Drawing.Point(98, 192);
+            this.txtDescProd.Location = new System.Drawing.Point(100, 189);
             this.txtDescProd.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescProd.Name = "txtDescProd";
             this.txtDescProd.Size = new System.Drawing.Size(102, 20);
@@ -127,7 +128,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 165);
+            this.label3.Location = new System.Drawing.Point(8, 163);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 13);
@@ -154,26 +155,29 @@
             this.btnBuscarProducto.TabIndex = 24;
             this.btnBuscarProducto.Text = "Buscar";
             this.btnBuscarProducto.UseVisualStyleBackColor = false;
+            this.btnBuscarProducto.Visible = false;
             this.btnBuscarProducto.Click += new System.EventHandler(this.btnBuscarProducto_Click);
             // 
-            // button2
+            // btnEditarProducto
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button2.Location = new System.Drawing.Point(592, 272);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(163, 52);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnEditarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnEditarProducto.Location = new System.Drawing.Point(592, 272);
+            this.btnEditarProducto.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEditarProducto.Name = "btnEditarProducto";
+            this.btnEditarProducto.Size = new System.Drawing.Size(163, 52);
+            this.btnEditarProducto.TabIndex = 25;
+            this.btnEditarProducto.Text = "Editar";
+            this.btnEditarProducto.UseVisualStyleBackColor = false;
+            this.btnEditarProducto.Visible = false;
+            this.btnEditarProducto.Click += new System.EventHandler(this.btnEditarProducto_Click);
             // 
-            // textBox1
+            // txtIdProducto
             // 
-            this.textBox1.Location = new System.Drawing.Point(98, 93);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(104, 20);
-            this.textBox1.TabIndex = 14;
+            this.txtIdProducto.Location = new System.Drawing.Point(98, 93);
+            this.txtIdProducto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtIdProducto.Name = "txtIdProducto";
+            this.txtIdProducto.Size = new System.Drawing.Size(104, 20);
+            this.txtIdProducto.TabIndex = 14;
             // 
             // label2
             // 
@@ -196,7 +200,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(100, 272);
+            this.dateTimePicker1.Location = new System.Drawing.Point(100, 304);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(183, 20);
@@ -205,7 +209,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(11, 272);
+            this.label7.Location = new System.Drawing.Point(11, 304);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(79, 13);
@@ -225,7 +229,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(23, 192);
+            this.label8.Location = new System.Drawing.Point(21, 192);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(63, 13);
@@ -243,7 +247,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btnMantTipoProd);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnEditarProducto);
             this.Controls.Add(this.btnBuscarProducto);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtPrecioProd);
@@ -254,7 +258,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtDescProd);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtIdProducto);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -279,8 +283,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBuscarProducto;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnEditarProducto;
+        private System.Windows.Forms.TextBox txtIdProducto;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnMantTipoProd;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;

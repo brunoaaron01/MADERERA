@@ -29,12 +29,13 @@ namespace CAPAPRESENTACION
         }
         private void MostrarMensajeBienvenida()
         {
-            string nombreUsuario = usuarioActual[0].CE_Rol.NombreRol;
+            string nombreUsuario = usuarioActual[0].Nombre;
             MessageBox.Show($"¡Bienvenido, {nombreUsuario}!", "Bienvenida", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         private void registrarClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            MatenedorCliente mc = new MatenedorCliente();
+            mc.ShowDialog();
         }
 
         private void registrarUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
@@ -63,7 +64,7 @@ namespace CAPAPRESENTACION
 
         private void registrarVentaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CoreVenta cv=new CoreVenta();
+            CoreVenta cv= new CoreVenta(usuarioActual);
             cv.ShowDialog();    
         }
 

@@ -24,5 +24,13 @@ namespace CAPADELOGICA
         {
             return CD_Prodcuto.Instancia.Ins_Producto(Req_Producto);
         }
+        public Int32 Upd_Producto(CE_Producto Req_Producto)
+        {
+            return CD_Prodcuto.Instancia.Upd_Producto(Req_Producto);
+        }
+        public List<CE_Producto> Get_List_Producto(String NombreProducto)
+        {
+            return CD_Prodcuto.Instancia.Get_List_Producto(NombreProducto);
+        }
     }
 }

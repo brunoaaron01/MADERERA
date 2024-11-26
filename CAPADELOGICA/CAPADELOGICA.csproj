@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="CL_CLIENTE.cs" />
     <Compile Include="CL_COMPRA.cs" />
+    <Compile Include="CL_DetalleVenta.cs" />
     <Compile Include="CL_HERRAMIENTA.cs" />
     <Compile Include="CL_MANTENIMIENTO.cs" />
     <Compile Include="CL_PRODUCTO.cs" />

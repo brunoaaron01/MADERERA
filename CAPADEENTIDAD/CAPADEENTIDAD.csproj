@@ -46,6 +46,7 @@
     <Compile Include="CE_DetalleCompra.cs" />
     <Compile Include="CE_DetalleMantenimiento.cs" />
     <Compile Include="CE_DetalleVenta.cs" />
+    <Compile Include="CE_GridDetalleVenta.cs" />
     <Compile Include="CE_MANTENIMIENTO.cs" />
     <Compile Include="CE_Producto.cs" />
     <Compile Include="CE_Proveedor.cs" />

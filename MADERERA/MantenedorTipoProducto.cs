@@ -21,7 +21,7 @@ namespace CAPAPRESENTACION
 
         private void MantenedorTipoProducto_Load(object sender, EventArgs e)
         {
-            //Autocompletar_txtDescTipoProd();
+            Autocompletar_txtDescTipoProd();
             List_TipoProducto();
         }
         private void List_TipoProducto() {
@@ -29,36 +29,32 @@ namespace CAPAPRESENTACION
             dataGridView1.DataSource = ListTipoProd;
         }
         private void Autocompletar_txtDescTipoProd() {
-            if (txtDescTipoProd.Text.Length >= 2)
+            try
             {
-                try
+                AutoCompleteStringCollection TipoProdCollection = new AutoCompleteStringCollection();
+                List<CE_TipoProducto> ListTipoProd = new CL_TipoProducto().Get_List_TipoProducto(txtDescTipoProd.Text);
+                
+                if (ListTipoProd.Count > 0)
                 {
-                    AutoCompleteStringCollection TipoProdCollection = new AutoCompleteStringCollection();
-                    List<CE_TipoProducto> ListTipoProd = new CL_TipoProducto().Get_List_TipoProducto(txtDescTipoProd.Text);
-                    
-                    if (ListTipoProd.Count > 0)
+                    foreach (var tipoProd in ListTipoProd)
                     {
-                        foreach (var tipoProd in ListTipoProd)
-                        {
-                            TipoProdCollection.Add(tipoProd.Descripcion);
-                        }
-                        txtDescTipoProd.AutoCompleteCustomSource = TipoProdCollection;
-                        txtDescTipoProd.AutoCompleteMode = AutoCompleteMode.Suggest;
-                        txtDescTipoProd.AutoCompleteSource = AutoCompleteSource.CustomSource;
+                        TipoProdCollection.Add(tipoProd.Descripcion);
                     }
-                    else
-                    {
-                        // Limpiar las sugerencias si no hay resultados
-                        txtDescTipoProd.AutoCompleteCustomSource.Clear();
-                    }
+                    txtDescTipoProd.AutoCompleteCustomSource = TipoProdCollection;
+                    txtDescTipoProd.AutoCompleteMode = AutoCompleteMode.Suggest;
+                    txtDescTipoProd.AutoCompleteSource = AutoCompleteSource.CustomSource;
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show($"Error al obtener sugerencias: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    // Limpiar las sugerencias si no hay resultados
+                    txtDescTipoProd.AutoCompleteCustomSource.Clear();
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al obtener sugerencias: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-
         private void btnRegistrarTipProd_Click(object sender, EventArgs e)
         {
             CE_TipoProducto Req_TipoProducto = new CE_TipoProducto();
@@ -75,9 +71,5 @@ namespace CAPAPRESENTACION
                 MessageBox.Show($"Error al registrar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        //private void txtDescTipoProd_TextChanged(object sender, EventArgs e)
-        //{
-        //    Autocompletar_txtDescTipoProd();
-        //}
     }
 }

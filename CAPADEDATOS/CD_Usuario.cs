@@ -40,6 +40,7 @@ namespace CAPADEDATOS
                 while (dr.Read())
                 {
                     CE_Usuario Get_Usuario = new CE_Usuario();
+                    Get_Usuario.IdUsuario = Convert.ToInt32(dr["IDUSU"].ToString());
                     Get_Usuario.Usuario = dr["USUARIO"].ToString();
                     Get_Usuario.Nombre = dr["Nombre"].ToString();
                     Get_Usuario.NroDocIde = dr["NroDocIde"].ToString();

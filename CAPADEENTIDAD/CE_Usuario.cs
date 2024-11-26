@@ -8,6 +8,7 @@ namespace CAPADEENTIDAD
 {
     public class CE_Usuario
     {
+        public Int32 IdUsuario { get; set; }
         public String Usuario { get; set; }
         public String Pass { get; set; }
         public String Nombre { get; set; }
